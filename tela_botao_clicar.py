@@ -24,7 +24,7 @@ i["bg"]= "green"
 lb = Label(i, text='Nome do usuario')
 lb.place(x=100, y=100)
 
-bt = Button(i, width="20", text="ok", command=bt_click)
+bt = Button(i, width="20", text='OK', command=bt_click)
 bt.place(x=230, y=100)
 
 #  botão que posiciona abaixo do botão OK
