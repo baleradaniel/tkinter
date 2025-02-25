@@ -3,20 +3,36 @@ i = Tk()
 i.title('Programa Financeiro')
 i.geometry('980x720+250+30')
 
+# lb1 = Label(i, text='Login', bg='yellow')
+# # componente .grid serve também para posicionar utilizando indicativo de linha(row) e coluna(column)
+# lb1.grid(row=1, column=1)
+
+# lb2 = Label(i, text='Senha', bg='red')
+# lb2.grid(row=1, column=1)
+
+# ed1 = Entry(i)
+# ed1.grid(row=1, column=1)
+
+# ed2 = Entry(i)
+# ed2.grid(row=1,column=1)
+
+# bt1 = Button(i, text='Login')
+# bt1.grid(row=1, column=1)
+
+# codigo abaixo faz corrções das posições das labels, caixa de texto e botao
+
 lb1 = Label(i, text='Login', bg='yellow')
-# componente .grid serve também para posicionar utilizando indicativo de linha(row) e coluna(column)
-lb1.place(x=750, y=120)
+lb1.grid(row=1, column=1)
 
 lb2 = Label(i, text='Senha', bg='red')
-lb2.place(x=750, y=320)
+lb2.grid(row=2, column=1)
 
 ed1 = Entry(i)
-ed1.place(x=700, y=100)
+ed1.grid(row=1,column=2)
 
 ed2 = Entry(i)
-ed2.place(x=700, y=300)
+ed2.grid(row=2,column=2)
 
 bt1 = Button(i, text='Login')
-bt1.place(x=480, y=500)
-
+bt1.grid(row=3, column=1)
 i.mainloop()
